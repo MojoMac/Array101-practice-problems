@@ -1,5 +1,7 @@
-# Practice-Problems
-Coding solutions to problems I solved 
+# Leetcode Array 101 Practice-Problems
+Coding solutions to problems I solved
+
+# Section 1: Introduction
 
 # ArrayOne: Given a binary array, find the maximum number of consecutive 1s in this array.
 Input: [1,1,0,1,1,1] | 
