@@ -1,18 +1,26 @@
 class ArrayOne {
-    private static int count;
-	public static int findMaxConsecutiveOnes(int[] nums) {
-        for (int i = 0; i < nums.length; i++) {
-            if (nums[i] == 1 && nums[i++] == 1) {
-                ArrayOne.count++;
-                if (nums[i++] == nums.length) {
-                    break;
-                }
+    static int count = 0;
+    static int consec_ones = 0;
+    public static int findMaxConsecutiveOnes(int[] nums) {
+        for (int i = 1; i < nums.length; i++) {
+            if (nums.length == 1) {
+                return 0;
+            }
+            if (nums[i] == 1 && nums[i-1] == 1) {
+                count++;
             }
         }
-		return ArrayOne.count;
-	}
-	public static void main(String[] args) {
-		int[] list = {1,0,1,1,0,1};
-		findMaxConsecutiveOnes(list);
-	}
+        if (count == 1) {
+            consec_ones = 2;
+        }
+        if (count > 1) {
+            consec_ones = count + 1;
+        }
+        return consec_ones;
+    }
+
+    public static void main(String[] args) {
+        int[] list = {1};
+        System.out.print(findMaxConsecutiveOnes(list));
+    }
 }
