@@ -2,7 +2,7 @@
 Coding solutions to problems I solved 
 
 # ArrayOne: Given a binary array, find the maximum number of consecutive 1s in this array.
-Input: [1,1,0,1,1,1]
+Input: [1,1,0,1,1,1] \n
 Output: 3
 Explanation: The first two digits or the last three digits are consecutive 1s.
     The maximum number of consecutive 1s is 3.
